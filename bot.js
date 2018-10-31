@@ -13,7 +13,7 @@ console.log("Discord Bot By So.?");
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (author) {
-  return author.send(' ** حرام واحد جميل مثلك م يكون عندنا .. تنورنا  https://discord.gg/CR6U4zT ** ')
+  return author.send(' ** حرام واحد جميل مثلك م يكون عندنا .. تنورنا  https://discord.gg/PzxfhCa ** ')
 
 }).catch(console.error)
 })

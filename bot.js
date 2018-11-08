@@ -1,21 +1,18 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
-client.on('ready', () => {
-console.log("Discord Bot By So.?");
-  console.log('BySo.?')
-  console.log('BySo.?')
-  console.log('BySo.?')
-  console.log('BySo.?')
-  console.log('BySo.?')
+const Discord = require('discord.js');
+const MeeRcY = new Discord.Client();
 
+console.log(".Online ");
+ 
+MeeRcY.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+**WELCOME TO NoThing.   
 
-});
-
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (author) {
-  return author.send(' ** حرام واحد جميل مثلك م يكون عندنا .. تنورنا  https://discord.gg/PzxfhCa ** ')
-
+**                                
+                               [  https://discord.gg/ewbRn9T ] 
+**  ... [ ${member}  ]
+**`) 
 }).catch(console.error)
 })
-
-client.login(process.env.BOT_TOKEN);
+MeeRcY.login(process.env.BOT_TOKEN);
